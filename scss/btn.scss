@@ -1,0 +1,25 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+// colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+.btn {
+  font-weight: bold;
+  padding: 20px 45px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+
+  &-white {
+    background: #fff;
+    color: $darkGreen;
+  }
+
+  &:hover {
+    background: $darkGreen;
+    color: #fff;
+  }
+}

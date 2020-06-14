@@ -1,0 +1,17 @@
+.btn {
+  font-weight: bold;
+  padding: 20px 45px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+}
+.btn-white {
+  background: #fff;
+  color: #0b4d3c;
+}
+.btn:hover {
+  background: #0b4d3c;
+  color: #fff;
+}
+/*# sourceMappingURL=btn.css.map */
