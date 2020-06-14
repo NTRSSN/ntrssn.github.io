@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   margin: 0;
+  color: #666666;
 }
 
 a {
@@ -79,9 +80,11 @@ table {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }
 
 footer {
   position: relative;
   width: 100%;
 }
+/*# sourceMappingURL=layout.css.map */
