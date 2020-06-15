@@ -5,7 +5,7 @@
   <title>CHOCCO - шоколадные батончики</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1000, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
@@ -139,6 +139,120 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="container">
+          <h2 class="section__title">Отзывы</h2>
+          <div class="reviews">
+            <div class="reviews__display">
+              <div class="reviews__display-inner">
+                <div class="reviews__avatar">
+                  <img src="/img/reviews-section/photo1.jpg" alt="Аватар пользователя актив" class="reviews__avatar-img">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Лучший перекус</h3>
+                  <div class="reviews__text">
+                    <p>
+                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
+                      В течение дня сижу за компьютером и часто отходить в кафе или на кухню 
+                      просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
+                    </p>
+                  </div>
+                  <div class="reviews__author">Алёна Хмельницкая</div>
+                </article>
+              </div>
+            </div>
+            <ul class="reviews__switcher">
+              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+                <a href="#" class="interactive-avatar__link">
+              <img src="/img/reviews-section/photo1.jpg" alt="Аватар пользователя 1" class="interactive-avatar__img">
+                </a>
+              </li>
+              <li class="reviews__switcher-item interactive-avatar">
+                <a href="#" class="interactive-avatar__link">
+              <img src="/img/reviews-section/photo2.jpg" alt="Аватар пользователя 2" class="interactive-avatar__img">
+                </a>
+              </li>
+              <li class="reviews__switcher-item interactive-avatar">
+                <a href="#" class="interactive-avatar__link">
+              <img src="/img/reviews-section/photo3.jpg" alt="Аватар пользователя 3" class="interactive-avatar__img">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order-section">
+        <div class="container">
+          <h2 class="section__title">Закажите доставку</h2>
+          <form class="form">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Имя</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Телефон</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Улица</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Дом</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Корпус</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Квартира</div>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Этаж</div>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Комментарий</div>
+                  <textarea class="form__input form__input--textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата по карте</div>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio--checkbox">
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
 

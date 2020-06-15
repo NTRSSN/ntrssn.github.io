@@ -1,0 +1,64 @@
+.reviews__display {
+  background: url('/img/reviews-section/raspberry-grey.png') right top no-repeat;
+  background-color: #f8faf9;
+  padding: 50px 45px 34px;
+  margin-bottom: 3%;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px;
+  }
+}
+
+.reviews__display-inner {
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.reviews__text {
+  margin-bottom: 32px;  
+  padding: 0 24% 0 0;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}

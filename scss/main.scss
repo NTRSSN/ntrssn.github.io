@@ -6,21 +6,25 @@ $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
 // normalize
-@import "/css/normalize.css";
+@import "./css/normalize.css";
 
 // setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet');
-@import "/css/layout.css";
+@import "./css/layout.css";
 
 
 //components
-@import "/css/components/header.css";
-@import "/css/components/hero.css";
-@import "/css/components/features.css";
-@import "/css/components/btn.css";
-@import "/css/components/section.css";
-@import "/css/components/headline.css";
-@import "/css/components/benefits.css";
-@import "/css/components/benefits-section.css";
-
-
+@import "./css/components/header.css";
+@import "./css/components/hero.css";
+@import "./css/components/features.css";
+@import "./css/components/btn.css";
+@import "./css/components/section.css";
+@import "./css/components/headline.css";
+@import "./css/components/benefits.css";
+@import "./css/components/benefits-section.css";
+@import "./css/components/reviews.css";
+@import "./css/components/reviews-section.css";
+@import "./css/components/interactive-avatar.css";
+@import "./css/components/form.css";
+@import "./css/components/order-section.css";
+@import "./css/components/radio.css";
