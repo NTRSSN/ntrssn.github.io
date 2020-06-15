@@ -5,8 +5,11 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+// z-indexes
+$z-fixed-menu: 100;
+
 .hero {
-  background: url('/img/hero-section/decor-leaf.png') right bottom no-repeat;
+  background: url('../../img/hero-section/decor-leaf.png') right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: 650px;
@@ -17,11 +20,11 @@ $darkGreen: #0b4d3c;
     position: absolute;
     bottom: -40px;
     left: 2%;
-    content: url('/img/hero-section/leaf_3.png');
+    content: url('../../img/hero-section/leaf_3.png');
   }
 
   &:after {
-    content: url('/img/hero-section/leaves-berries.png');
+    content: url('../../img/hero-section/leaves-berries.png');
     position: absolute;
     bottom: -40px;
     right: 1.5%;
@@ -38,7 +41,7 @@ $darkGreen: #0b4d3c;
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url('/img/hero-section/chocolates.png') right center / 50% auto no-repeat;
+  background: url('../../img/hero-section/chocolates.png') right center / 50% auto no-repeat;
 }
 
 .hero__main-title {

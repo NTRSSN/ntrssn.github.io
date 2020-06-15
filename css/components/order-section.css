@@ -1,5 +1,5 @@
 .order-section {
-  background: url("/img/order-section/bg-order.png");
+  background: url("../../img/order-section/bg-order.png");
   height: 100vh;
   min-height: 650px;
   color: #fff;
@@ -9,11 +9,11 @@
   position: absolute;
   left: 2%;
   bottom: 6%;
-  content: url("/img/order-section/blueberry.png");
+  content: url("../../img/order-section/blueberry.png");
 }
 .order-section:after {
   position: absolute;
   right: 0.5%;
   bottom: 6%;
-  content: url("/img/order-section/leaf.png");
+  content: url("../../img/order-section/leaf.png");
 }

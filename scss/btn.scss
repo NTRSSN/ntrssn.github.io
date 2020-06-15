@@ -5,6 +5,9 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+// z-indexes
+$z-fixed-menu: 100;
+
 .btn {
   font-weight: bold;
   padding: 20px 45px;
@@ -12,14 +15,36 @@ $darkGreen: #0b4d3c;
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  display: inline-block;
+  border: none;
 
   &-white {
     background: #fff;
     color: $darkGreen;
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+    }
   }
 
-  &:hover {
+  &-green {
     background: $darkGreen;
     color: #fff;
+
+    &:hover {
+      background: #fff;
+      color:$darkGreen;
+    }
+  }
+  
+  &-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+
+    &:hover {
+      color:$darkGreen;
+    }
   }
 }

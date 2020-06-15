@@ -1,9 +1,9 @@
 .reviews-section {
   position: relative;
-  background: url("/img/reviews-section/strawberry.png") right 1% top 4% no-repeat;
+  background: url("../../img/reviews-section/strawberry.png") right 1% top 4% no-repeat;
 }
 .reviews-section:before {
-  content: url("/img/reviews-section/grey-leaf-berries.png");
+  content: url("../../img/reviews-section/grey-leaf-berries.png");
   position: absolute;
   bottom: -80px;
   left: 0;

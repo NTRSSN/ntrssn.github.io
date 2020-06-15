@@ -5,13 +5,31 @@
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  display: inline-block;
+  border: none;
 }
 .btn-white {
   background: #fff;
   color: #0b4d3c;
 }
-.btn:hover {
+.btn-white:hover {
   background: #0b4d3c;
   color: #fff;
+}
+.btn-green {
+  background: #0b4d3c;
+  color: #fff;
+}
+.btn-green:hover {
+  background: #fff;
+  color: #0b4d3c;
+}
+.btn-transparent {
+  background: transparent;
+  color: #000;
+  text-transform: none;
+}
+.btn-transparent:hover {
+  color: #0b4d3c;
 }
 /*# sourceMappingURL=btn.css.map */

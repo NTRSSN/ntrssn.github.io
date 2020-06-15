@@ -5,6 +5,9 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+// z-indexes
+$z-fixed-menu: 100;
+
 // normalize
 @import "../css/normalize.css";
 
@@ -28,3 +31,4 @@ $darkGreen: #0b4d3c;
 @import "../css/components/form.css";
 @import "../css/components/order-section.css";
 @import "../css/components/radio.css";
+@import "../css/components/fixed-menu.css";

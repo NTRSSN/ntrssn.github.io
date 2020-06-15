@@ -45,8 +45,13 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .form__title {
-  color: #365a49;;
+  color: #365a49;
+}
+
+.form__btns {
+  margin-top: 40px;
 }

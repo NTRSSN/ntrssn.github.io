@@ -3,12 +3,13 @@
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin-right: 25px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("/img/icons/checkmark.svg") center center no-repeat;
+  background: url("../../img/icons/checkmark.svg") center center no-repeat;
 }
 
 .radio__elem {
@@ -24,6 +25,7 @@
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
