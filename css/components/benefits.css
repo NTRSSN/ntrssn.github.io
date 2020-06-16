@@ -8,7 +8,7 @@
   position: relative;
 }
 .benefits__item:before {
-  content: url("./img/why-section/separator.png");
+  content: url("../../img/why-section/separator.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -54,4 +54,5 @@
 .benefit__title {
   font-size: 27px;
   font-weight: 700;
+  color: #000;
 }

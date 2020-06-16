@@ -4,6 +4,11 @@
   justify-content: space-between;
 }
 
+.logo {
+  width: 53px;
+  height: 39px;
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -33,3 +38,4 @@
   height: 12px;
   margin-right: 6px;
 }
+/*# sourceMappingURL=header.css.map */

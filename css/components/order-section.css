@@ -5,6 +5,9 @@
   color: #fff;
   position: relative;
 }
+.order-section .section__title {
+  color: #365a49;
+}
 .order-section:before {
   position: absolute;
   left: 2%;
@@ -16,8 +19,4 @@
   right: 0.5%;
   bottom: 6%;
   content: url("../../img/order-section/leaf.png");
-}
-
-.section__title {
-  color: #365a49;
 }
