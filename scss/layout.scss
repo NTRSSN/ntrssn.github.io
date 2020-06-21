@@ -1,12 +1,14 @@
-$containerWidth: 940px;
-$baseFontSize: 18px;
+html {
+    font-size: $baseFontSize;
 
-// colors
-$blue: #61c4d9;
-$darkGreen: #0b4d3c;
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
 
-// z-indexes
-$z-fixed-menu: 100;
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
 
 html,
 body {
@@ -15,7 +17,6 @@ body {
 
 body {
     font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-    font-size: $baseFontSize;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,7 +30,7 @@ a {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: rem(36px);
 }
 
 ul {
@@ -78,10 +79,9 @@ table {
 
 .wrapper {
     position: relative;
-    overflow: hidden;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
+    overflow: hidden;
 }
 
 .wrapper__content {
@@ -89,7 +89,8 @@ table {
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     position: relative;
 }

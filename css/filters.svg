@@ -1,0 +1,4 @@
+<filter id="blur">
+        <feColorMatrix in="SourceGraphic" type="saturate" values="0.3">
+        </feColorMatrix>
+</filter>

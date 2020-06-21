@@ -2,14 +2,15 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right:25px;
+  margin-right: rem(25px);
+  margin-bottom: rem(10px);
 
   &--checkbox {
     .radio__visible {
       border-radius: 0;
 
       &:before {
-        background: url('../../img/icons/checkmark.svg') center center no-repeat;
+        background: url('../img/icons/checkmark.svg') center center no-repeat;
       }
     }
   }

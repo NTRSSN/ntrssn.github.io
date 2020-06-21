@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 // colors
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
@@ -8,27 +12,34 @@ $darkGreen: #0b4d3c;
 // z-indexes
 $z-fixed-menu: 100;
 
+@import "media";
+
 // normalize
-@import "../css/normalize.css";
+@import "../css/normalize";
 
 // setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet');
-@import "../css/layout.css";
+@import "layout";
 
 
 //components
-@import "../css/components/header.css";
-@import "../css/components/hero.css";
-@import "../css/components/features.css";
-@import "../css/components/btn.css";
-@import "../css/components/section.css";
-@import "../css/components/headline.css";
-@import "../css/components/benefits.css"; 
-@import "../css/components/benefits-section.css";
-@import "../css/components/reviews.css";
-@import "../css/components/reviews-section.css";
-@import "../css/components/interactive-avatar.css";
-@import "../css/components/form.css";
-@import "../css/components/order-section.css";
-@import "../css/components/radio.css";
-@import "../css/components/fixed-menu.css";
+@import "header";
+@import "hero";
+@import "contacts";
+@import "hamburger";
+@import "features";
+@import "btn";
+@import "section";
+@import "headline";
+@import "benefits"; 
+@import "benefits-section";
+@import "reviews";
+@import "reviews-section";
+@import "interactive-avatar";
+@import "form";
+@import "order-section";
+@import "map";
+@import "footer";
+@import "radio";
+@import "socials";
+@import "fixed-menu";

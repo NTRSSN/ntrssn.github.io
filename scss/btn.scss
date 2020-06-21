@@ -1,18 +1,8 @@
-$containerWidth: 940px;
-$baseFontSize: 18px;
-
-// colors
-$blue: #61c4d9;
-$darkGreen: #0b4d3c;
-
-// z-indexes
-$z-fixed-menu: 100;
-
 .btn {
   font-weight: bold;
-  padding: 20px 45px;
+  padding: rem(20px) rem(45px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   display: inline-block;
