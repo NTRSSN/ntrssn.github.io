@@ -12,4 +12,9 @@
   @media screen and (max-width: $phones) {
     @content;
   }
+
+  @media screen and (max-width: $smallPhones) {
+    @content;
+    font-size: 4vmin;
+  }
 }

@@ -2,13 +2,17 @@
   background: url('../img/reviews-section/raspberry-grey.png') right top no-repeat;
   background-color: #f8faf9;
   padding: rem(50px) rem(45px) rem(34px);
-  margin-bottom: 3%;
+  margin-bottom: rem(30px);
   overflow: hidden;
   position: relative;
 
   @include tablets {
     padding: rem(50px) rem(25px) rem(34px);
   }
+
+  @include phones {
+    background-size: 25%;
+    }
 
   &:before {
     content: "";

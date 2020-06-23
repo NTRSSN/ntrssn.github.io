@@ -62,7 +62,7 @@
 }
 
 .benefit__img {
-  margin-bottom: 10%;
+  margin-bottom: rem(20px);
 
   @include phones {
     margin-bottom: 0;

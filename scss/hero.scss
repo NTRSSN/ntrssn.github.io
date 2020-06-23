@@ -90,6 +90,7 @@
   }
   
   @include phones {
-    padding: 0 14%;
+    padding: 0;
+    max-width: 291px;
   }
 }

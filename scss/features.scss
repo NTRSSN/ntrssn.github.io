@@ -12,11 +12,14 @@
 
 .feature {
   display: flex;
+  align-items: end;
 }
 
 .feature__icon {
-  width: rem(45px);
+  width: rem(52px);
+  height: rem(45px);
   margin-right: rem(7px);
+  fill: #c6f7ff;
 }
 
 .feature__text {

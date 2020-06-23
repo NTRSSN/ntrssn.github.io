@@ -5,6 +5,8 @@
 }
 
 .contact-phone.header__contact-phone {
+  padding-top: 6px;
+
   @include tablets {
     display: none;
   }
