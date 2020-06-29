@@ -1,0 +1,37 @@
+
+.slider-item__content {
+    position: relative;
+}
+
+.dropdowm__menu {
+    position: absolute;
+    background: #ccc;
+    border-radius: 4px;
+    width: 270px;
+    height: 330px;
+    top: 100%;
+    left: -9999px;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.slider-item__content:hover .dropdown__menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 24px 20px 23px 31px;
+    opacity: 1;
+}
+
+.dropdown__icon {
+    width: rem(35px);
+    height: rem(35px);   
+}
+
+
+.dropdowm__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
