@@ -70,6 +70,8 @@
 }
 
 .slider-item__content {
+    position: relative;
+    width: rem(90px);
     margin-bottom: rem(35px);
 
     @include tablets {

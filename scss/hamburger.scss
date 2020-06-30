@@ -16,3 +16,44 @@
   height: 4px;
   border-radius: 10px;
 }
+
+.modal-menu {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #333537;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(36px);
+  line-height: 2;
+  opacity: 0;
+  transition: .5s;
+}
+
+.close {
+  position: absolute;
+  top: rem(32px);
+  right: rem(26px);
+  cursor: pointer;
+  fill: #fff;
+  width: rem(20px);
+  height: rem(20px);
+  opacity: .7;
+}
+
+.menu_opened {
+  z-index: 1;
+  opacity: .99;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.hburger {
+  cursor: pointer;
+}
