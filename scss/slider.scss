@@ -31,13 +31,43 @@
 
 .arrow {
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: flex-end;
     width: rem(60px);
 
+    @include tablets {
+        top:25%;
+    }
+
+    @include phones {
+        top: 20vmin;
+    }
+
     &-left {
         transform: rotate(180deg);
         transform-origin: 50% 50%;
+        left: rem(-30px);
+    
+        @include tablets {
+            left: 20%;
+        }
+
+        @include phones {
+            left: 0;
+        }
+    }
+    
+    &-right {
+        right: -30px;
+
+        @include tablets {
+            right: 15%;
+        }
+
+        @include phones {
+            right: 0;
+        }
     }
 }
 

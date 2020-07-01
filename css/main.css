@@ -679,7 +679,7 @@ footer {
 
 .modal-menu {
   display: flex;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1030,13 +1030,66 @@ footer {
 
 .arrow {
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: flex-end;
   width: 3.3333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .arrow {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow {
+    top: 20vmin;
+  }
+}
+@media screen and (max-width: 400px) {
+  .arrow {
+    top: 20vmin;
+    font-size: 4vmin;
+  }
+}
 .arrow-left {
   transform: rotate(180deg);
   transform-origin: 50% 50%;
+  left: -1.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .arrow-left {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-left {
+    left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .arrow-left {
+    left: 0;
+    font-size: 4vmin;
+  }
+}
+.arrow-right {
+  right: -30px;
+}
+@media screen and (max-width: 768px) {
+  .arrow-right {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-right {
+    right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .arrow-right {
+    right: 0;
+    font-size: 4vmin;
+  }
 }
 
 .arrow__icon {

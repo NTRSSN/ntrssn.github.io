@@ -1,4 +1,3 @@
-// const burger = document.querySelector(".burger");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".modal-menu");
 const close = document.querySelector(".close");
