@@ -1,0 +1,94 @@
+.team-section {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: url('../img/team-section/raspberry.png');
+        bottom: rem(-60px);
+        left: rem(32px);
+    }
+}
+
+.team--version--desktop {
+    display: flex;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.team--version--mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__elem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-right: rem(20px);
+    max-width: rem(260px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.team__member {
+    margin-bottom: rem(20px);
+}
+
+.team__member-name {
+    font-size: rem(21px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.triangle-icon {
+    margin-left: rem(5px);
+    // transform: rotate(180deg);
+    // transform-origin: 50% 50%;
+}
+
+.team__member-desc {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+
+    @include tablets {
+        position: relative;
+    }
+}
+
+.team__content-text {
+    text-align: center;
+    font-weight: 300;
+}
+
+.team__member-pic {
+    display: inline-block;
+}

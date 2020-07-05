@@ -713,10 +713,6 @@ footer {
   padding: 0;
 }
 
-.hburger {
-  cursor: pointer;
-}
-
 .features {
   display: flex;
 }
@@ -1027,6 +1023,11 @@ footer {
   display: flex;
   align-items: center;
 }
+.slider-window .bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
 
 .arrow {
   display: flex;
@@ -1246,6 +1247,100 @@ footer {
   min-width: 8.0555555556rem;
 }
 
+.team-section {
+  position: relative;
+}
+.team-section:before {
+  position: absolute;
+  content: url("../img/team-section/raspberry.png");
+  bottom: -3.3333333333rem;
+  left: 1.7777777778rem;
+}
+
+.team--version--desktop {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__elem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin-right: 1.1111111111rem;
+  max-width: 14.4444444444rem;
+}
+.team__elem:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__elem {
+    margin-right: 0;
+    margin-bottom: 1.1111111111rem;
+  }
+  .team__elem:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team__member {
+  margin-bottom: 1.1111111111rem;
+}
+
+.team__member-name {
+  font-size: 1.1666666667rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.triangle-icon {
+  margin-left: 0.2777777778rem;
+}
+
+.team__member-desc {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .team__member-desc {
+    position: relative;
+  }
+}
+
+.team__content-text {
+  text-align: center;
+  font-weight: 300;
+}
+
+.team__member-pic {
+  display: inline-block;
+}
+
 .dropdown__menu {
   position: absolute;
   background: #fff;
@@ -1288,6 +1383,26 @@ footer {
 
 .dropdown__item--value {
   margin-left: auto;
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__display {
@@ -1395,9 +1510,41 @@ footer {
   color: #000;
 }
 
-.reviews__switcher {
+.reviews-switcher {
   display: flex;
   justify-content: center;
+}
+
+.reviews-switcher__item {
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  border: 0.4444444444rem solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 1%;
+}
+.reviews-switcher__item.active {
+  border: 0.3333333333rem solid #0f5a47;
+}
+.reviews-switcher__item:hover {
+  border-color: #0f5a47;
+}
+
+.reviews-switcher__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.reviews-switcher__avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .reviews-section {
@@ -1433,35 +1580,6 @@ footer {
   }
 }
 
-.interactive-avatar {
-  width: 3.7777777778rem;
-  height: 3.7777777778rem;
-  border: 0.4444444444rem solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  margin-right: 1%;
-}
-.interactive-avatar--active {
-  border: 0.4444444444rem solid #0f5a47;
-}
-
-.interactive-avatar__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-}
-
-.interactive-avatar__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .form {
   display: flex;
 }
@@ -1494,6 +1612,10 @@ footer {
   .form__col {
     margin-right: 0;
   }
+}
+
+.form__input.input-error {
+  border-color: red;
 }
 
 .form__row {
@@ -1608,6 +1730,34 @@ footer {
     content: none;
     font-size: 4vmin;
   }
+}
+
+.modal {
+  display: none;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 0 1.1111111111rem;
+  max-width: 16.6666666667rem;
+  max-height: 9.5555555556rem;
+}
+
+.modal__content {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.error-modal .modal__content {
+  color: red;
+}
+
+.modal__button-container {
+  font-size: 1.0555555556rem;
 }
 
 .map-section {

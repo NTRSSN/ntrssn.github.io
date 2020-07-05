@@ -1,3 +1,24 @@
+.reviews__list {
+  position: relative;
+  min-height: rem(280px);
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
 .reviews__display {
   background: url('../img/reviews-section/raspberry-grey.png') right top no-repeat;
   background-color: #f8faf9;
@@ -91,7 +112,41 @@
   color: #000;
 }
 
-.reviews__switcher {
+.reviews-switcher {
   display: flex;
   justify-content: center;
+}
+
+.reviews-switcher__item {
+  width: rem(68px);
+  height: rem(68px);
+  border: rem(8px) solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 1%;
+
+  &.active {
+    border: rem(6px) solid #0f5a47;
+  }
+
+  &:hover {
+    border-color: #0f5a47;
+  }
+}
+
+.reviews-switcher__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.reviews-switcher__avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

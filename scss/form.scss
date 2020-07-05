@@ -24,6 +24,10 @@
   }
 }
 
+.form__input.input-error {
+  border-color: red;
+}
+
 .form__row {
   display: flex;
   margin-bottom: rem(18px);
