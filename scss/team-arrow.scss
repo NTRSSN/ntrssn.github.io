@@ -1,0 +1,6 @@
+.triangle-icon {
+    transition: transform .3s;
+}
+.triangle-icon.active {
+    transform: rotate(180deg);
+}

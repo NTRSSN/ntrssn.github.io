@@ -986,35 +986,50 @@ footer {
 }
 
 .slider-section {
-  background: url("../img/slider/slider-leaf.png") right bottom no-repeat;
   background-color: #f8faf9;
 }
-.slider-section:before {
+.slider-section:after {
   content: "";
   background: url("../img/slider/slider-berries.png");
   position: absolute;
   width: 7.5rem;
   height: 6.2222222222rem;
   background-repeat: no-repeat;
+  right: 1.5%;
+  bottom: 56%;
+}
+@media screen and (max-width: 768px) {
+  .slider-section:after {
+    background-size: 85%;
+    right: -5%;
+  }
+}
+.slider-section:before {
+  content: "";
+  background: url("../img/slider/slider-leaf.png");
+  position: absolute;
+  width: 10.8888888889rem;
+  height: 25.1666666667rem;
+  background-repeat: no-repeat;
   right: 0;
-  bottom: 52%;
+  bottom: 53%;
 }
 @media screen and (max-width: 768px) {
   .slider-section:before {
-    background-size: 85%;
-    right: -rem(38px);
+    background-size: 80%;
+    right: -7%;
   }
 }
 @media screen and (max-width: 480px) {
   .slider-section:before {
-    background-size: 75%;
-    right: -rem(48px);
+    background-size: 85%;
+    right: -6%;
   }
 }
 @media screen and (max-width: 400px) {
   .slider-section:before {
-    background-size: 75%;
-    right: -rem(48px);
+    background-size: 85%;
+    right: -6%;
     font-size: 4vmin;
   }
 }
@@ -1251,10 +1266,19 @@ footer {
   position: relative;
 }
 .team-section:before {
+  content: "";
   position: absolute;
-  content: url("../img/team-section/raspberry.png");
-  bottom: -3.3333333333rem;
+  background: url("../img/team-section/raspberry.png");
+  background-repeat: no-repeat;
+  width: 5.7777777778rem;
+  height: 6.3333333333rem;
+  bottom: -2.5555555556rem;
   left: 1.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .team-section:before {
+    background-size: 85%;
+  }
 }
 
 .team--version--desktop {
@@ -1309,6 +1333,7 @@ footer {
   font-weight: 700;
   display: flex;
   align-items: center;
+  margin-bottom: 0.5555555556rem;
 }
 
 .triangle-icon {
@@ -1332,6 +1357,10 @@ footer {
   }
 }
 
+.team__member-position {
+  font-weight: 500;
+}
+
 .team__content-text {
   text-align: center;
   font-weight: 300;
@@ -1339,6 +1368,15 @@ footer {
 
 .team__member-pic {
   display: inline-block;
+  margin-top: 10px;
+}
+
+.triangle-icon {
+  transition: transform 0.3s;
+}
+
+.triangle-icon.active {
+  transform: rotate(180deg);
 }
 
 .dropdown__menu {
@@ -1518,7 +1556,7 @@ footer {
 .reviews-switcher__item {
   width: 3.7777777778rem;
   height: 3.7777777778rem;
-  border: 0.4444444444rem solid transparent;
+  border: 0.3333333333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;

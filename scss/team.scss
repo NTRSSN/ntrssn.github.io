@@ -2,10 +2,18 @@
     position: relative;
 
     &:before {
+        content: "";
         position: absolute;
-        content: url('../img/team-section/raspberry.png');
-        bottom: rem(-60px);
+        background: url('../img/team-section/raspberry.png');
+        background-repeat: no-repeat;
+        width: rem(104px);
+        height: rem(114px);
+        bottom: rem(-46px);
         left: rem(32px);
+
+        @include tablets {
+            background-size: 85%;
+        }
     }
 }
 
@@ -60,12 +68,11 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    margin-bottom: rem(10px);
 }
 
 .triangle-icon {
     margin-left: rem(5px);
-    // transform: rotate(180deg);
-    // transform-origin: 50% 50%;
 }
 
 .team__member-desc {
@@ -84,6 +91,10 @@
     }
 }
 
+.team__member-position {
+    font-weight: 500;
+}
+
 .team__content-text {
     text-align: center;
     font-weight: 300;
@@ -91,4 +102,5 @@
 
 .team__member-pic {
     display: inline-block;
+    margin-top: 10px;
 }
