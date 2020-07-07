@@ -22,18 +22,18 @@
 
 .accordeon__trigger {
     display: flex;
-    width: 100px;
+    width: rem(100px);
     background-position: left bottom;
     background-size: cover;
     justify-content: center;
     align-items: flex-end;
     text-decoration: none;
-    padding-bottom: 40px;
+    padding-bottom: rem(40px);
 }
 
 .accordeon__title {
     color: #ffffff;
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     transform: rotate(-90deg);
     white-space: nowrap;
@@ -47,25 +47,29 @@
 }
 
 .active .accordeon__wrap {
-    width: 630px;
+    width: rem(630px);
+    
+    @include tablets {
+        width: rem(468px);
+    }
 }
 
 .accordeon__content {
-    min-width: 630px;
-    padding: 50px 127px 50px 27px;
+    min-width: rem(630px);
+    padding: rem(50px) rem(127px) rem(50px) rem(27px);
     overflow-y: auto;
     background-color: rgba(51, 53, 55, .93);
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 400;
-    line-height: 23.97px;
+    line-height: rem(23.97px);
     position: relative;
     height: 100%;
 }
 
 .accordeon__close {
     position: absolute;
-    right: 32px;
-    top: 26px;
+    right: rem(32px);
+    top: rem(26px);
     color: #fff
 }

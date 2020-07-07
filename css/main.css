@@ -1404,18 +1404,18 @@ footer {
 
 .accordeon__trigger {
   display: flex;
-  width: 100px;
+  width: 5.5555555556rem;
   background-position: left bottom;
   background-size: cover;
   justify-content: center;
   align-items: flex-end;
   text-decoration: none;
-  padding-bottom: 40px;
+  padding-bottom: 2.2222222222rem;
 }
 
 .accordeon__title {
   color: #ffffff;
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: 700;
   transform: rotate(-90deg);
   white-space: nowrap;
@@ -1429,26 +1429,31 @@ footer {
 }
 
 .active .accordeon__wrap {
-  width: 630px;
+  width: 35rem;
+}
+@media screen and (max-width: 768px) {
+  .active .accordeon__wrap {
+    width: 26rem;
+  }
 }
 
 .accordeon__content {
-  min-width: 630px;
-  padding: 50px 127px 50px 27px;
+  min-width: 35rem;
+  padding: 2.7777777778rem 7.0555555556rem 2.7777777778rem 1.5rem;
   overflow-y: auto;
   background-color: rgba(51, 53, 55, 0.93);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 23.97px;
+  line-height: 1.3316666667rem;
   position: relative;
   height: 100%;
 }
 
 .accordeon__close {
   position: absolute;
-  right: 32px;
-  top: 26px;
+  right: 1.7777777778rem;
+  top: 1.4444444444rem;
   color: #fff;
 }
 
