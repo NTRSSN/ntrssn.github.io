@@ -1,11 +1,12 @@
 .team-section {
     position: relative;
 
-    &:before {
+    &:after {
         content: "";
         position: absolute;
         background: url('../img/team-section/raspberry.png');
         background-repeat: no-repeat;
+        z-index: 1;
         width: rem(104px);
         height: rem(114px);
         bottom: rem(-46px);
@@ -103,4 +104,11 @@
 .team__member-pic {
     display: inline-block;
     margin-top: 10px;
+}
+
+.triangle-icon {
+    transition: transform .3s;
+}
+.team__elem.active .triangle-icon {
+    transform: rotate(180deg);
 }
