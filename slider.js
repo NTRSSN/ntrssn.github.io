@@ -8,6 +8,9 @@ $('.arrow--direction--prev').click(e => {
     slider.goToPrevSlide();
 })
 
+$(window).on('resize', () => {
+    slider.reloadSlider();
+});
 
 $('.arrow--direction--next').click(e => {
     e.preventDefault();

@@ -1,35 +1,32 @@
-.accordeon-section {
-    position: relative;
-}
+// .accordeon-section {
+//     position: relative;
+//     background: url('../img/accordeon/bg.png'), #000;
+//     background-size: cover;
+// }
 
-.accordeon-section {
-    background: url('../img/accordeon/bg.png'), #000;
-    background-size: cover;
-}
+// .accordeon__list {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     display: flex;
+// }
 
-.accordeon__list {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    display: flex;
-}
+// .accordeon__item {
+//     height: 100%;
+//     display: flex;
+// }
 
-.accordeon__item {
-    height: 100%;
-    display: flex;
-}
-
-.accordeon__trigger {
-    display: flex;
-    width: rem(100px);
-    background-position: left bottom;
-    background-size: cover;
-    justify-content: center;
-    align-items: flex-end;
-    text-decoration: none;
-    padding-bottom: rem(40px);
-}
+// .accordeon__trigger {
+//     display: flex;
+//     width: rem(100px);
+//     background-position: left bottom;
+//     background-size: cover;
+//     justify-content: center;
+//     align-items: flex-end;
+//     text-decoration: none;
+//     padding-bottom: rem(40px);
+// }
 
 .accordeon__title {
     color: #ffffff;
@@ -40,36 +37,94 @@
     width: 100%;
 }
 
-.accordeon__wrap {
-    width: 0;
-    overflow: hidden;
-    transition: 1s;
+// .accordeon__wrap {
+//     width: 0;
+//     overflow: hidden;
+//     transition: width 1s;
+// }
+
+// .active .accordeon__wrap {
+//     width: rem(630px);
+    
+//     @include tablets {
+//         width: rem(468px);
+//     }
+// }
+
+// .accordeon__content {
+//     width: rem(630px);
+//     padding: rem(50px) rem(127px) rem(50px) rem(27px);
+//     overflow-y: auto;
+//     background-color: rgba(51, 53, 55, .93);
+//     color: #ffffff;
+//     font-size: rem(16px);
+//     font-weight: 400;
+//     line-height: rem(23.97px);
+//     position: relative;
+//     height: 100%;
+// }
+
+
+
+
+
+
+
+
+// .accordeon__close {
+//     position: absolute;
+//     right: rem(32px);
+//     top: rem(26px);
+//     color: #fff
+// }
+
+
+
+
+
+
+.accordeon-section {
+    position: relative;
+    background: url('../img/accordeon/bg.png');
+    color: #fff;
 }
 
-.active .accordeon__wrap {
-    width: rem(630px);
-    
-    @include tablets {
-        width: rem(468px);
-    }
+.accordeon__list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.accordeon__item {
+    display: flex;   
+}
+
+.accordeon__trigger {
+    position: relative;
+    width: 100px;
+}
+
+.accordeon__trigger:after {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordeon__wrap {
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width 1s;
 }
 
 .accordeon__content {
-    min-width: rem(630px);
-    padding: rem(50px) rem(127px) rem(50px) rem(27px);
-    overflow-y: auto;
-    background-color: rgba(51, 53, 55, .93);
-    color: #ffffff;
-    font-size: rem(16px);
-    font-weight: 400;
-    line-height: rem(23.97px);
-    position: relative;
-    height: 100%;
-}
-
-.accordeon__close {
-    position: absolute;
-    right: rem(32px);
-    top: rem(26px);
-    color: #fff
+    padding: rem(40px) rem(73px) rem(45px) rem(26px);
 }

@@ -1,5 +1,4 @@
 .slider-section {
-    // background: url('../img/slider/slider-leaf.png') right bottom 90% no-repeat;
     background-color: #f8faf9;
     
     &:after {
@@ -59,17 +58,17 @@
     width: rem(60px);
 
     @include tablets {
-        top:25%;
+        top: 20vmin;
     }
 
     @include phones {
-        top: 20vmin;
+        top: 25vmin;
     }
 
     &-left {
         transform: rotate(180deg);
         transform-origin: 50% 50%;
-        left: rem(-30px);
+        left: rem(-25px);
     
         @include tablets {
             left: 20%;
@@ -81,7 +80,7 @@
     }
     
     &-right {
-        right: -30px;
+        right: rem(-25px);
 
         @include tablets {
             right: 15%;
@@ -108,6 +107,18 @@
     }
 }
 
+.slider-item__title {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__title-wrap {
+
+    @include phones {
+        max-width: rem(300px);
+    }
+}
+
 .slider-item__picture {
     min-width: 50%;
     margin-right: 7%;
@@ -118,6 +129,10 @@
         margin-right: 0;
         margin-bottom: rem(20px);
         max-width: 50%;
+    }
+
+    @include phones {
+        max-width: 70%;
     }
 }
 

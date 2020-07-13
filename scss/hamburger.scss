@@ -1,3 +1,7 @@
+.hamburger-wrap {
+  margin-right: rem(6px);
+}
+
 .hamburger {
   width: 24px;
   height: 20px;
@@ -37,13 +41,18 @@
 
 .close {
   position: absolute;
-  top: rem(32px);
-  right: rem(26px);
+  top: rem(35px);
+  right: rem(27px);
   cursor: pointer;
   fill: #fff;
   width: rem(20px);
   height: rem(20px);
   opacity: .7;
+}
+
+.close--accordeon {
+  top: rem(26px);
+  right: rem(32px);
 }
 
 .menu_opened {
