@@ -9,7 +9,7 @@
         height: rem(112px);
         background-repeat: no-repeat;
         right: 1.5%;
-        bottom: 56%;
+        bottom: -210%;
         
         @include tablets {
             background-size: 85%;
@@ -25,7 +25,7 @@
         height: rem(453px);
         background-repeat: no-repeat;
         right: 0;
-        bottom: 53%;
+        bottom: -230%;
 
         @include tablets {
             background-size: 80%;

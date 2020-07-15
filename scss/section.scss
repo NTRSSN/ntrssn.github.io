@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+  @include tablets {
+    height: 100%;
+  }
 }
 
 .section__title {

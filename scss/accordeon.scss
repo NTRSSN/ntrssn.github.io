@@ -28,15 +28,6 @@
 //     padding-bottom: rem(40px);
 // }
 
-.accordeon__title {
-    color: #ffffff;
-    font-size: rem(48px);
-    font-weight: 700;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    width: 100%;
-}
-
 // .accordeon__wrap {
 //     width: 0;
 //     overflow: hidden;
@@ -79,14 +70,31 @@
 // }
 
 
+.section__title--accordeon {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    color: #fff;
+}
 
-
-
+.accordeon__title {
+    color: #ffffff;
+    font-size: rem(48px);
+    font-weight: 700;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+}
 
 .accordeon-section {
     position: relative;
-    background: url('../img/accordeon/bg.png');
+    background: url('../img/accordeon/bg.png') #000;
     color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .accordeon__list {
@@ -104,18 +112,41 @@
 .accordeon__trigger {
     position: relative;
     width: 100px;
+    text-decoration: none;
+
+    @include phones {
+        width: 18vmin;
+    }
+        
+    &--1 {
+        background: url('../img/accordeon/trig1.png') #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+    &--2 {
+        background: url('../img/accordeon/trig2.png') #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+    &--3 {
+        background: url('../img/accordeon/trig3.png') #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
-.accordeon__trigger:after {
-    content: "";
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-}
+// .accordeon__trigger:after {
+//     content: "";
+//     display: block;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     position: absolute;
+//     background: rgba(0, 0, 0, 0.4);
+// }
 
 .accordeon__wrap {
     background: rgba(47, 50, 52, 0.9);
