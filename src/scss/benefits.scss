@@ -1,0 +1,90 @@
+.benefits {
+  display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(35px);
+  }
+
+  &:before {
+    content: url('../img/why-section/separator.png');
+    position: absolute;
+    top: rem(53px);
+    right: 0;
+    transform: translateX(50%);
+    
+    @include tablets {
+      display: none;
+    }
+  }
+
+  
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.benefit {
+  text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.benefit__img-wrapper {
+  display: inline-block;
+  width: rem(126px);
+  height: rem(126px);
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__img {
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(18px);
+  }
+}
+
+.benefit__icon {
+  width: rem(75px);
+  height: rem(69px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+  font-size: rem(27px);
+  font-weight: 700;
+  color: #000;
+
+  @include phones {
+    margin-bottom: rem(8px);
+  }
+}

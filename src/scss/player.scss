@@ -1,0 +1,516 @@
+.player-container {
+
+    &:before {
+        position: absolute;
+        left: -6%;
+        bottom: -8%;
+        content: url('../img/player/leaf-left.png');
+    }
+
+    &:after {
+        position: absolute;
+        right: 0;
+        top: 5%;
+        content: url('../img/player/leaf-right.png');
+    }
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player__wrapper {
+    position: relative;
+    width: 660px;
+    height: 370px;
+}
+
+
+// // &.paused {
+// //     .player__start {
+// //         width: 14px;
+// //         height: 22px;
+// //         border: none;
+
+// //         &:after,
+// //         &:before {
+// //             content: "";
+// //            display: block;
+// //             position: absolute;
+// //             width: 5px;
+// //             top: 0;
+// //             bottom: 0;
+// //             background: #626262;
+// //         }
+
+// //         &:after {
+// //             right: 0;
+// //         }
+
+// //         &:before {
+// //             left: 0;
+// //         }
+// //     }
+// // }
+
+// .player__splash {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: url('../img/player/splashscreen.png') center center/cover no-repeat;
+//     cursor: pointer;
+
+
+//     .player-active & {
+//         display: none;
+//     }
+
+// }
+
+.player__controls {
+    position: absolute;
+    width: 660px;
+    height: 35px;
+    bottom: 0;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+// .player__playback {
+//     position: relative;
+//     height: 16px;
+//     width: 444px;
+
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         height: 4px;
+//         top: 50%;
+//         left: 0;
+//         right: 0;
+//         background: #626262;
+//         display: block;
+//         transform: translateY(-50%);
+//     }
+
+//     &-button {
+//         background: #626262;
+//         border-radius: 50px;
+//         border: none;
+//         width: 12px;
+//         height: 12px;
+//         padding: 0;
+//         position: absolute;
+//         top: 50%;
+//         left: 0;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+
+// .player__start {
+//     width: 22px;
+//     height: 22px;
+//     border-style: solid;
+//     border-width: 11px 0 11px 15px;
+//     border-color: transparent transparent transparent #626262;
+
+//     .player.paused & {
+//         width: 22px;
+//         height: 22px;
+//         border-style: double;
+//         border-width: 0 0 0 11px;
+//         border-color: #626262;
+//     }
+// }
+
+
+// Появление и скрытие иконки ==без звука==
+
+.player__mute {
+    .mute-icon {
+        visibility: hidden;
+    }
+
+    &.mute-active {
+        .mute-icon {
+            visibility: visible;
+        }
+    }
+}
+
+.player__volume {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.volume-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+.mute-icon {
+    fill: #626262;
+    width: 11px;
+    height: 11px;
+}
+
+.play-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+.pause-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+
+
+
+
+// .player__volume-control {
+//     position: relative;
+//     height: 16px;
+//     width: 58px;
+
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         height: 4px;
+//         top: 50%;
+//         left: 0;
+//         right: 0;
+//         background: #626262;
+//         display: block;
+//         transform: translateY(-50%);
+//     }
+
+//     .player__volume-button {
+//         background: #626262;
+//         border-radius: 50px;
+//         border: none;
+//         width: 12px;
+//         height: 12px;
+//         padding: 0;
+//         position: absolute;
+//         top: 50%;
+//         left: 0;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+
+
+
+
+
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    align-self: center;
+    background: #626262;
+    height: 4px;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: #626262;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-track {
+    background: rgb(231, 231, 231);
+    border: none;
+    width: 100%;
+}
+
+.speed,
+.fullscreen-button {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    border: none;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+    width: 2.5rem;
+}
+
+option {
+    background: rgb(78, 78, 78);
+    color: white;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player:fullscreen .video-screen {
+    background: rgb(38, 38, 39)
+}
+
+.player:fullscreen .file-chooser {
+    transform: translateY(500%);
+}
+
+// .file-chooser {
+//     color: white;
+//     cursor: pointer;
+//     height: 50px;
+//     transform: translateY(-50%);
+// }
+
+.video-screen {
+    background: rgb(188, 188, 188);
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: opacity .5s;
+}
+
+.video__player-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    background: #404040;
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    opacity: 0;
+    margin: 0;
+    transition: .5s;
+    transition-property: opacity, visibility;
+    transform: translateY(-34px);
+    visibility: hidden;
+}
+
+.controls * {
+    opacity: .9;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.controls.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-button {
+    align-self: center;
+    border: 7px dashed white;
+    background: transparent;
+    height: 35px;
+    margin: 0 15px;
+    transition: scale .1s;
+    width: 40px;
+}
+
+.play {
+    outline: none;
+    align-self: center;
+    height: 40px;
+    margin: 0 20px;
+    width: 20px;
+}
+
+.play.start {
+    .play-icon {
+        display: block;
+    }
+
+    .pause-icon {
+        display: none;
+    }
+}
+
+.play.pause {
+    .play-icon {
+        display: none;
+    }
+
+    .pause-icon {
+        display: block;
+    }
+}
+
+.player__mute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.time-bar {
+    width: rem(444px);
+}
+
+.volume-bar {
+    margin: 0 20px;
+    width: rem(60px);
+}
+
+.volume-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+.mute-icon {
+    fill: #626262;
+    width: 11px;
+    height: 11px;
+}
+
+.play-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+.pause-icon {
+    fill: #626262;
+    width: 22px;
+    height: 22px;
+}
+
+.time {
+    align-self: center;
+    color: #626262;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 24px;
+    min-width: 135px;
+    opacity: .9;
+    padding: 0 0 0 rem(40px);
+
+    @include phones {
+        display: none;
+    }
+}
+
+.speed {
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    opacity: .9;
+    margin-right: 5px;
+    width: 50px;
+}
+
+::-webkit-media-controls {
+    display: none;
+}
+
+@media (hover: hover) {
+    .controls *:hover {
+        opacity: .9;
+    }
+
+    .fullscreen-button:active {
+        transform: scale(1.2);
+    }
+}
+
+// @media only screen and (max-width: 900px) {
+//     .player {
+//         margin: 0;
+//         max-width: 100vw;
+//         max-height: 100vh;
+//     }
+
+//     .controls {
+//         justify-content: space-evenly;
+//     }
+
+//     .controls * {
+//         margin: 0;
+//         margin-left: 8px;
+//     }
+
+//     .controls {
+//         margin: 0;
+//     }
+
+//     .play {
+//         display: none;
+//     }
+
+//     .time {
+//         font-size: 18px;
+//         font-weight: 400;
+//         max-width: 14%;
+//         min-width: 10%;
+//         width: 10%;
+//     }
+
+//     .time-bar {
+//         width: 100%;
+//     }
+
+//     .volume-bar {
+//         max-width: 10%;
+//     }
+
+//     .speed {
+//         display: none;
+//     }
+
+//     .fullscreen-button {
+//         border-width: 3px;
+//         height: 25px;
+//         margin-right: 8px;
+//         min-width: 25px;
+//         width: 40px;
+//     }
+
+//     .file-chooser {
+//         display: none;
+//     }
+// }

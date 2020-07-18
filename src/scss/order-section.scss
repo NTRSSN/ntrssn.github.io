@@ -1,0 +1,33 @@
+.order-section {
+  background: url('../img/order-section/bg-order.png');
+  // height: 100vh;
+  // min-height: rem(650px);
+  color: #fff;
+  position: relative;
+
+  .section__title {
+    color: #365a49;
+  }
+
+  &:before {
+    position: absolute;
+    left: 2%;
+    bottom: 6%;
+    content: url('../img/order-section/blueberry.png');
+
+    @include phones {
+      content: none;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    right: .5%;
+    bottom: 6%;
+    content: url('../img/order-section/leaf.png');
+
+    @include phones {
+      content: none;
+    }
+  }
+}

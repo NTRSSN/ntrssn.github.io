@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-phone.header__contact-phone {
+  padding-top: 6px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.logo {
+  width: rem(53px);
+  height: rem(39px);
+  flex-shrink: 0;
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 6px;
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-right: rem(25px);
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+}

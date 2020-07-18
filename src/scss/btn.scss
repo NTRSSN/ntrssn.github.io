@@ -1,0 +1,40 @@
+.btn {
+  font-weight: bold;
+  padding: rem(20px) rem(45px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+
+  &-white {
+    background: #fff;
+    color: $darkGreen;
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+    }
+  }
+
+  &-green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color:$darkGreen;
+    }
+  }
+  
+  &-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+
+    &:hover {
+      color:$darkGreen;
+    }
+  }
+}
