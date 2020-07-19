@@ -1,6 +1,6 @@
 // .accordeon-section {
 //     position: relative;
-//     background: url('../img/accordeon/bg.png'), #000;
+//     background: url('./img/accordeon/bg.png'), #000;
 //     background-size: cover;
 // }
 
@@ -91,7 +91,7 @@
 
 .accordeon-section {
     position: relative;
-    background: url('../img/accordeon/bg.png') #000;
+    background: url('./img/accordeon/bg.png') #000;
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,10 +103,25 @@
     top: 0;
     bottom: 0;
     display: flex;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+    }
 }
 
 .accordeon__item {
-    display: flex;   
+    display: flex;
+    height: 100%;
+
+    @include phones {
+        &.active {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
 }
 
 .accordeon__trigger {
@@ -119,19 +134,19 @@
     }
         
     &--1 {
-        background: url('../img/accordeon/trig1.png') #000;
+        background: url('./img/accordeon/trig1.png') #000;
         background-repeat: no-repeat;
         background-size: cover;
     }
    
     &--2 {
-        background: url('../img/accordeon/trig2.png') #000;
+        background: url('./img/accordeon/trig2.png') #000;
         background-repeat: no-repeat;
         background-size: cover;
     }
    
     &--3 {
-        background: url('../img/accordeon/trig3.png') #000;
+        background: url('./img/accordeon/trig3.png') #000;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -154,6 +169,7 @@
     position: relative;
     overflow: hidden;
     transition: width 1s;
+    z-index: 2;
 }
 
 .accordeon__content {

@@ -3,7 +3,7 @@
     
     &:after {
         content: "";
-        background: url('../img/slider/slider-berries.png');
+        background: url('./img/slider/slider-berries.png');
         position: absolute;
         width: rem(135px);
         height: rem(112px);
@@ -19,7 +19,7 @@
 
     &:before {
         content: "";
-        background: url('../img/slider/slider-leaf.png');
+        background: url('./img/slider/slider-leaf.png');
         position: absolute;
         width: rem(196px);
         height: rem(453px);

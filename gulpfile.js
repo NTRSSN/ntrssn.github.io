@@ -36,7 +36,7 @@ const {
 sass.compilier = require('node-sass');
 
 task('clean', () => {
-    return src(`${DIST_PATH}/**/*`, ).pipe(rm());
+    return src(`${DIST_PATH}/**/**/*`, ).pipe(rm());
 });
 
 task('copy:html', () => {
@@ -47,12 +47,38 @@ task('copy:html', () => {
         }));
 });
 
-task('styles', () => {
-    return src([...STYLES_LIBS, "src/styles/main.css"])
+task('copy:images', () => {
+    return src(`${SRC_PATH}/img/**/*`)
+        .pipe(dest(`${DIST_PATH}/img`))
+        .pipe(reload({
+            stream: true
+        }));
+});
+
+task('copy:videos', () => {
+    return src(`${SRC_PATH}/videos/**/*`)
+        .pipe(dest(`${DIST_PATH}/videos`))
+        .pipe(reload({
+            stream: true
+        }));
+});
+
+task('sass', () => {
+    return src("src/scss/main.scss")
         .pipe(gulpif(env == 'dev', sourcemaps.init()))
-        .pipe(concat('main.min.css'))
+        .pipe(concat('main.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
+        .pipe(dest(`${SRC_PATH}/styles`))
+        .pipe(reload({
+            stream: true
+        }))
+});
+
+task('styles', () => {
+    return src([...STYLES_LIBS, "src/styles/main.min.css"])
+        .pipe(gulpif(env == 'dev', sourcemaps.init()))
+        .pipe(concat('main.min.css'))
         // .pipe(px2rem())
         .pipe(gulpif(env == 'dev',
             autoprefixer({
@@ -115,23 +141,24 @@ task('server', () => {
 });
 
 task('watch', () => {
-    watch('./src/styles/**/*.scss', series('styles'));
+    watch('./src/**/*.scss', series('sass', 'styles'));
     watch('./src/*.html', series('copy:html'));
-    watch('./src/styles/*.js', series('scripts'));
+    watch('./src/scripts/*.js', series('scripts'));
+    watch('./src/img/**/*', series('copy:images'));
     // watch('./src/images/icons/*.svg', series('icons')); <--- После раскомментирования не забыть добавить в default после scripts
 })
 
 task(
     'default',
     series(
-        'clean',
-        parallel('copy:html', 'styles', 'scripts'),
+        'clean', 'sass',
+        parallel('copy:html', 'copy:images', 'copy:videos', 'styles', 'scripts'),
         parallel('watch', 'server')
     ));
 
 task(
     'build',
     series(
-        'clean',
-        parallel('copy:html', 'styles', 'scripts')
+        'clean', 'sass',
+        parallel('copy:html', 'copy:images', 'copy:videos', 'styles', 'scripts')
     ));
