@@ -1,10 +1,14 @@
-h1 Это тестовый проект для loftschool
+My second learning project
 
-+ Показать
-+ Познакомиться
-
-```bash
-
-$ git clone git@github.com:NTRSSN/ecco-shop.git
-
-```
+HTML5
+CSS3
+Flexbox
+BEM-naming
+SASS
+Git & Github
+Terminal
+Base JavaScript
+jQuery
+AJAX
+NPM
+Gulp
